@@ -1,0 +1,135 @@
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#tittle{
+    font-size: 2.2rem;
+    color:#444;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+#img-regist {
+    flex: 1 1 auto;
+    background-image: radial-gradient(circle at center, #512cd5 60%, #B2A4FF 50%);
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.inputRegist {
+    flex: 1 1 auto;
+    background-color: white;
+    position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  text-align: left; /* membuat isi konten div rata kiri */
+  
+  transform: translateX(20%);
+}
+  
+
+h2 {
+    margin-bottom: 6px; 
+    color:grey; 
+    font-size: 15px; 
+    font-weight: normal; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#phone_container {
+    background: 100px #ECF2FF;
+    display: inline-block;
+    padding: 0px;
+}
+
+#email-container {
+    background: 100px #ECF2FF;
+    display: inline-block;
+    padding: 0px;
+}
+
+#phone_error {
+    color:black;
+    display: none;
+    font-size: 12.3px;
+    margin: 2px;
+}
+#email_error {
+    color: black;
+    display: none;
+    font-size: 12.3px;
+    margin: 2px;
+}
+
+/* Hide the password by default */
+input[type="password"] {
+    -webkit-text-security: disc;
+  }
+  
+  /* Show the password when the button is clicked */
+  input[type="text"] {
+    -webkit-text-security: none;
+  }
+  
+  #button- { /* button: create an account, tipe: submit */
+    width:11em;
+    height: 2em;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #B2A4FF;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+
+}
+
+
+.btn::before{
+    content: '';
+    width:0;
+    height:2em;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-image: linear-gradient(to right, #512cd5 0%, #B2A4FF 100%);
+    transition: .5s ease;
+    display:block;
+    z-index: -1;
+}
+.btn:hover::before{
+    width: 11em;
+}
+
+#alr-have-acc { /* button alr have an account*/
+    margin-left: 12px;
+    font-size: 12px;
+}
+
+#button-sign-in {
+    
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: none;
+        color: #512cd5;
+        font-size: 12px;
+        text-decoration: none; /* untuk menghilangkan underline pada hyperlink */
+        border: none; /* untuk menghilangkan border */
+        cursor: pointer; /* mengubah kursor menjadi pointer saat mengarah ke tombol */
+      
+      
+}
+#button-sign-in:hover {
+    color: grey;
+}

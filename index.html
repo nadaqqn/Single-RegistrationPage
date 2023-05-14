@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <tittle> </tittle>
+        <link href = "design.css" rel = "stylesheet">
+
+    </head>
+
+    <body>
+        <div >
+            <img id="img-regist" src="team.svg" width="200" height="200">
+        </div>
+            
+                <div class="inputRegist"> 
+            
+                    <h1 id="tittle"style="font-family: Arial, Helvetica, sans-serif;"> Create an account</h1>
+        
+                    <br>
+                    <form>
+                        <label for = "name">
+                            <h2> Full Name</h2>
+                            <input type="text" id="full-name" required placeholder="Input your name here" ></input> 
+                        </label>
+                        <label for = "phone">
+                            <h2> Phone Number</h2>
+                                <div id = "phone_container">
+                                <input id="phone" name = "phone" type = "tel" required pattern = "[+0-9]+" placeholder="+62xxxxxxxxxxxx"> 
+        
+                                <p id="phone_error">Please enter a valid phone number</p>
+                                </div>    
+                        </label> 
+                        <label for = "email">
+                            <h2> Email</h2>
+                                <div id="email-container">
+                                <input id="email" name = "email" type = "email" required pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"placeholder="nama@example.com"> 
+            
+                                <p id="email_error">Please enter a valid email address</p>
+                                </div>
+                        </label>
+                        <label for = "password">
+                            <h2> Password</h2>
+                            <input type="password" id="password" name="passwors" required placeholder="Input password here" ></input> 
+                            <button type="button" id="togglePassword" style="font-size: 10px;"> Show password</button>
+                        </label>
+            
+                            <br><br><br>
+                    <button id="button-"class="btn solid" type="submit"> Create an account</button>
+
+                    <br><br><br><br>
+                    <a id="alr-have-acc">  Already have an account?</a>
+                    <a href="#" id="button-sign-in" type="button solid"> Sign in</a>
+                </form>
+                </div>    
+                    <script src="script.js"></script>
+    </body>
+</html>
